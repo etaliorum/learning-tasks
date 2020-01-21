@@ -11,3 +11,6 @@ if source == 'прямоугольник':
     a = int(input())
     b = int(input())
     print (a * b)
+if source == 'круг':
+    r = int(input())
+    print(3.14 * (r ** 2))
