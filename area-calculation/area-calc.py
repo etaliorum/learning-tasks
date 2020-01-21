@@ -4,9 +4,10 @@ if source == 'треугольник':
     a = int(input())
     b = int(input())
     c = int(input())
-    p = (a + b + c) / 2
-    s = (p * (p - a) * (p - b) * (p - c)) ** 0.5
-    print(s)
+    if a + b > c and a + c > b and b + c > a:
+        p = (a + b + c) / 2
+        s = (p * (p - a) * (p - b) * (p - c)) ** 0.5
+        print(s)
 if source == 'прямоугольник':
     a = int(input())
     b = int(input())
