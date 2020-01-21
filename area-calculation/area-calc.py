@@ -7,3 +7,7 @@ if source == 'треугольник':
     p = (a + b + c) / 2
     s = (p * (p - a) * (p - b) * (p - c)) ** 0.5
     print(s)
+if source == 'прямоугольник':
+    a = int(input())
+    b = int(input())
+    print (a * b)
