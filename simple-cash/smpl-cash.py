@@ -6,13 +6,11 @@ def f(x):
 
 n = int(input())
 s = {}
-cash = 0
 
 for i in range(n):
     x = int(input())
     if x not in s:
-        cash = f(x)
-        print(cash)  # from new
-        s[x] = cash
+        s[x] = f(x)
+        print(s[x])  # from new
     else:
         print(s[x])  # from cash
