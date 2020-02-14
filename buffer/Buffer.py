@@ -11,14 +11,12 @@
 class Buffer:
     def __init__(self):
         self.buffer = []
-        self.part = 0
 
     def add(self, *a):
         self.buffer.extend(a)
         while len(self.buffer) >= 5:
-            self.part = self.buffer[0:5]
+            print(sum(self.buffer[0:5]))
             del self.buffer[0:5]
-            print(sum(self.part))
 
     def get_current_part(self):
         return self.buffer
