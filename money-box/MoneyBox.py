@@ -6,25 +6,15 @@
 
 class MoneyBox:
     def __init__(self, capacity):
-        self.v = 0
+        self.count = 0
         self.capacity = capacity
 
     def can_add(self, v):
-        if v <= self.capacity:
+        if self.count + v <= self.capacity:
             return True
         else:
             return False
 
     def add(self, v):
         if self.can_add(v):
-            self.v += v
-
-
-mb = MoneyBox(10)
-print(mb.capacity, mb.v)
-mb.add(5)
-print(mb.v)
-mb.add(5)
-print(mb.v)
-mb.add(1)
-print(mb.v)
+            self.count += v
