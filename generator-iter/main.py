@@ -38,7 +38,7 @@ def mul5(x):
     return x % 5 == 0
 
 
-a = [i for i in range(100)]
+a = [i for i in range(1000)]
 print(list(Multifilter(a, mul2, mul3, mul5)))
 print(list(Multifilter(a, mul2, mul3, mul5, judge=Multifilter.judge_half)))
 print(list(Multifilter(a, mul2, mul3, mul5, judge=Multifilter.judge_all)))
